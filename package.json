@@ -1,0 +1,28 @@
+{
+  "name": "practicenode",
+  "version": "1.0.0",
+  "description": "Practicar Node.js es clave para desarrollar aplicaciones web escalables y eficientes en el lado del servidor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emilio2207/PracticeNode.git"
+  },
+  "keywords": [
+    "practice",
+    "node",
+    "nodejs",
+    "emiDev"
+  ],
+  "author": "Emilio Ramirez - emiDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emilio2207/PracticeNode/issues"
+  },
+  "homepage": "https://github.com/Emilio2207/PracticeNode#readme",
+  "dependencies": {
+    "picocolors": "1.1.1"
+  }
+}
