@@ -9,7 +9,7 @@ async function ls(folder) {
   try {
     files = await fs.readdir(folder);
   } catch {
-    console.error(`No se pudo leer el directorio ${folder}`);
+    console.error(pc.red(`❌ No se pudo leer el directorio ${folder}`));
     process.exit(1);
   }
 
@@ -28,7 +28,9 @@ async function ls(folder) {
     const fileSize = stats.size.toString();
     const fileModified = stats.mtime.toLocaleString();
 
-    return `${fileType} ${file.padEnd(20)} ${fileSize.padStart(10)} ${fileModified}`;
+    return `${pc.bgMagenta(fileType)} ${pc.blue(file.padEnd(20))} ${pc.green(
+      fileSize.padStart(10)
+    )} ${pc.yellow(fileModified)}`;
   });
 
   const filesInfo = await Promise.all(filesPromises);
